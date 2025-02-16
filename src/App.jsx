@@ -8,18 +8,14 @@ class App extends Component {
   render () {
     return (
       <>
-        <h1>Converting from Function to Class Component</h1>
+        <img src={viteLogo} className="logo" alt="vite logo" />
+        <h1>Learning Class Components</h1>
         <div className="card">
+          <p>Hello world! My name is Daryl!</p>
           <button>
-            count button
+            Change Name
           </button>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test HMR
-          </p>
         </div>
-        <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
-        </p>
       </>
     )
   }
