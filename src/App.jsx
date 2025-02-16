@@ -11,10 +11,8 @@ class App extends Component {
         <img src={viteLogo} className="logo" alt="vite logo" />
         <h1>Learning Class Components</h1>
         <div className="card">
-          <p>Hello world! My name is Daryl!</p>
-          <button>
-            Change Name
-          </button>
+          <p>Hello World! My name is Daryl!</p>
+          <button>Change Name</button>
         </div>
       </>
     )
