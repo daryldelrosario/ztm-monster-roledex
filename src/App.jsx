@@ -5,13 +5,21 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      name: 'Daryl'
+    }
+  }
+
   render () {
     return (
       <>
         <img src={viteLogo} className="logo" alt="vite logo" />
         <h1>Learning Class Components</h1>
         <div className="card">
-          <p>Hello World! My name is Daryl!</p>
+          <p>Hello World! My name is {this.state.name}!</p>
           <button>Change Name</button>
         </div>
       </>
