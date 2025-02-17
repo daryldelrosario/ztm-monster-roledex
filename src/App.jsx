@@ -9,37 +9,31 @@ class App extends Component {
     super();
 
     this.state = {
-      name: 'Daryl',
-      company: 'ZTM'
+      monsters: [
+        {
+          name: 'Jude Quinn'
+        },
+        {
+          name: 'Clark Kent'
+        },
+        {
+          name: 'Ashley'
+        },
+        {
+          name: 'Daryl'
+        }
+      ]
     }
-  }
+  };
 
   render () {
     return (
       <>
-        <img src={viteLogo} className="logo" alt="vite logo" />
-        <h1>Learning Class Components</h1>
-        <div className="card">
-          <p>Hello World, my name is {this.state.name}!</p>
-          <p>I work at {this.state.company} ...</p>
-          <button 
-            onClick={() => {
-              this.setState(
-                () => {
-                  return {
-                    name: 'Clark Kent', 
-                    company: 'CTO of $MAYBE'
-                  };
-                },
-                () => {
-                  console.log(this.state);
-                }
-              );
-            }}
-          >
-            Change Name
-          </button>
-        </div>
+        {
+          this.state.monsters.map((monster) => {
+            return <h1>{monster.name}</h1>;
+          })
+        }
       </>
     )
   }
