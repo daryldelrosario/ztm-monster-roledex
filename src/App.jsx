@@ -1,4 +1,6 @@
 import { Component } from 'react';
+import CardList from './components/card-list/card-list';
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -50,6 +52,7 @@ class App extends Component {
           onChange={onSearchChange}
         />
 
+        <CardList />
         {filteredMonsters.map((monster) => {
           return (
             <div key={monster.id}>
