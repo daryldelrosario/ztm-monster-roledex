@@ -1,8 +1,12 @@
 .search-box {
   border: none;
   outline: none;
-  padding: 10px;
+  padding: 10px 10px;
   width: 150px;
-  line-height: 30px;
   margin-bottom: 30px;
+  border-radius: 0.75rem;
+}
+
+.search-box::-webkit-search-cancel-button {
+  cursor: pointer;
 }
