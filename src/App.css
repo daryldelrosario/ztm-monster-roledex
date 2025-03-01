@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -19,4 +21,10 @@ body {
     rgba(0, 128, 128, 1) 100%
   );
   text-align: center;
+}
+
+.app-title {
+  color: #0ccac4;
+  font-size: 3rem;
+  font-family: "Kablammo";
 }
